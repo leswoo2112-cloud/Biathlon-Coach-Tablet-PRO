@@ -427,3 +427,262 @@ button:hover{
     border-top:1px solid rgba(255,255,255,.08);
 
 }
+/* ===========================
+   History
+=========================== */
+
+.history-list{
+
+    max-height:220px;
+
+    overflow-y:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.history-item{
+
+    background:#101826;
+
+    border-left:5px solid #00d2ff;
+
+    border-radius:10px;
+
+    padding:12px;
+
+    transition:.2s;
+
+}
+
+.history-item:hover{
+
+    background:#152236;
+
+}
+
+.history-date{
+
+    font-size:14px;
+
+    color:#8fa6c0;
+
+    margin-bottom:6px;
+
+}
+
+.history-result{
+
+    font-size:16px;
+
+    font-weight:600;
+
+}
+
+/* ===========================
+   Scroll
+=========================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#0d1117;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#3b526d;
+
+    border-radius:30px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#4d6b90;
+
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+
+    height:42px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#8fa6c0;
+
+    background:#111b28;
+
+    border-top:2px solid #1f3146;
+
+}
+
+/* ===========================
+   Animation
+=========================== */
+
+.card{
+
+    animation:fadeIn .35s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(12px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+button{
+
+    transition:.2s;
+
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+
+}
+
+button:active{
+
+    transform:scale(.96);
+
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width:1200px){
+
+.content{
+
+grid-template-columns:1fr;
+
+}
+
+.left-panel{
+
+height:auto;
+
+}
+
+#targetCanvas{
+
+max-width:650px;
+
+}
+
+}
+
+@media (max-width:900px){
+
+.topbar{
+
+flex-direction:column;
+
+height:auto;
+
+padding:15px;
+
+gap:15px;
+
+}
+
+.logo{
+
+font-size:22px;
+
+}
+
+.analysis{
+
+grid-template-columns:1fr;
+
+}
+
+.click-panel{
+
+grid-template-columns:1fr;
+
+}
+
+.bottom-buttons{
+
+flex-direction:column;
+
+}
+
+.bottom-buttons button{
+
+width:100%;
+
+}
+
+}
+
+@media (max-width:600px){
+
+.panel-title{
+
+font-size:20px;
+
+}
+
+.card h2{
+
+font-size:18px;
+
+}
+
+.click-value{
+
+font-size:22px;
+
+}
+
+.analysis-item div{
+
+font-size:20px;
+
+}
+
+}
+
+/* ===========================
+   End
+=========================== */
