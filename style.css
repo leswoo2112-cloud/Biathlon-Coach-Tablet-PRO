@@ -1,0 +1,429 @@
+/* ===========================
+   Biathlon Coach Tablet PRO
+   style.css
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:"Pretendard",sans-serif;
+
+    background:#0b111b;
+
+    color:white;
+
+    overflow:hidden;
+
+}
+
+.app{
+
+    width:100vw;
+
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.topbar{
+
+    height:72px;
+
+    background:#111b28;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 25px;
+
+    border-bottom:2px solid #1f3146;
+
+}
+
+.logo{
+
+    font-size:26px;
+
+    font-weight:700;
+
+    color:#00d2ff;
+
+}
+
+.top-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+select{
+
+    height:42px;
+
+    padding:0 15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#1c2736;
+
+    color:white;
+
+    font-size:16px;
+
+}
+
+button{
+
+    height:42px;
+
+    padding:0 18px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    background:#00b894;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.2s;
+
+}
+
+button:hover{
+
+    background:#00d8a7;
+
+}
+
+.content{
+
+    flex:1;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:20px;
+
+    padding:20px;
+
+}
+
+.left-panel{
+
+    background:#121c2b;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.right-panel{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.panel-title{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.canvas-wrap{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+#targetCanvas{
+
+    width:100%;
+
+    max-width:760px;
+
+    aspect-ratio:1;
+
+    background:white;
+
+    border-radius:50%;
+
+    border:8px solid #333;
+
+}
+/* ===========================
+   Right Panel
+=========================== */
+
+.card{
+
+    background:#182435;
+
+    border-radius:16px;
+
+    padding:18px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.25);
+
+}
+
+.card h2{
+
+    font-size:20px;
+
+    margin-bottom:18px;
+
+    color:#00d2ff;
+
+}
+
+.row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:12px;
+
+    padding-bottom:10px;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.row span:first-child{
+
+    color:#9bb1c9;
+
+}
+
+.row span:last-child{
+
+    font-weight:600;
+
+}
+
+/* ===========================
+   Group Analysis
+=========================== */
+
+.analysis{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:14px;
+
+}
+
+.analysis-item{
+
+    background:#111b28;
+
+    border-radius:12px;
+
+    padding:14px;
+
+}
+
+.analysis-item label{
+
+    display:block;
+
+    font-size:13px;
+
+    color:#8fa6c0;
+
+    margin-bottom:8px;
+
+}
+
+.analysis-item div{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#ffffff;
+
+}
+
+/* ===========================
+   Click Recommendation
+=========================== */
+
+.click-panel{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:15px;
+
+    margin-bottom:18px;
+
+}
+
+.click-box{
+
+    background:#111b28;
+
+    border-radius:14px;
+
+    text-align:center;
+
+    padding:15px;
+
+}
+
+.click-title{
+
+    color:#8fa6c0;
+
+    font-size:14px;
+
+    margin-bottom:8px;
+
+}
+
+.click-value{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#00ff99;
+
+}
+
+.recommend{
+
+    background:#0d3b2e;
+
+    border:2px solid #00ff99;
+
+    border-radius:12px;
+
+    padding:15px;
+
+    text-align:center;
+
+}
+
+#recommendText{
+
+    font-size:20px;
+
+    font-weight:700;
+
+    color:#00ff99;
+
+}
+
+/* ===========================
+   Bottom Buttons
+=========================== */
+
+.bottom-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+    margin-top:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.bottom-buttons button{
+
+    min-width:130px;
+
+}
+
+/* ===========================
+   Shot Table
+=========================== */
+
+.shot-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.shot-table thead{
+
+    background:#101826;
+
+}
+
+.shot-table th{
+
+    padding:12px;
+
+    font-size:14px;
+
+    color:#9bb1c9;
+
+}
+
+.shot-table td{
+
+    text-align:center;
+
+    padding:10px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
