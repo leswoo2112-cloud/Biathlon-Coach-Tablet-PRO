@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Biathlon Coach Tablet PRO</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="app">
+
+<header class="topbar">
+
+<div class="logo">
+🎯 Biathlon Coach Tablet PRO
+</div>
+
+<div class="top-right">
+
+<select id="athleteSelect">
+
+<option>이은성</option>
+<option>선수 2</option>
+<option>선수 3</option>
+
+</select>
+
+<button id="saveBtn">
+저장
+</button>
+
+</div>
+
+</header>
+
+<div class="content">
+
+<section class="left-panel">
+
+<div class="panel-title">
+영점사격 (ZEROING)
+</div>
+
+<div class="canvas-wrap">
+
+<canvas
+id="targetCanvas"
+width="800"
+height="800">
+</canvas>
+
+</div>
+
+<div class="bottom-buttons">
+
+<button id="undoBtn">
+마지막 삭제
+</button>
+
+<button id="clearBtn">
+전체 초기화
+</button>
+
+<button id="centerBtn">
+중앙 이동
+</button>
+
+<button id="historyBtn">
+기록 보기
+</button>
+
+</div>
+
+</section>
+
+<section class="right-panel">
+
+<div class="card">
+
+<h2>선수 정보</h2>
+
+<div class="row">
+<span>선수</span>
+<span id="athleteName">
+이은성
+</span>
+</div>
+
+<div class="row">
+<span>거리</span>
+<span>
+50m
+</span>
+</div>
+
+<div class="row">
+<span>종목</span>
+<span>
+바이애슬론
+</span>
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>그룹 분석</h2>
+
+<div class="analysis">
+
+<div class="analysis-item">
+
+<label>
+그룹 크기
+</label>
+
+<div id="groupSize">
+0 mm
+</div>
+
+</div>
+
+<div class="analysis-item">
+
+<label>
+중심 X
+</label>
+
+<div id="offsetX">
+0 mm
+</div>
+
+</div>
+
+<div class="analysis-item">
+
+<label>
+중심 Y
+</label>
+
+<div id="offsetY">
+0 mm
+</div>
+
+</div>
+
+<div class="analysis-item">
+
+<label>
+평균 반경
+</label>
+
+<div id="avgRadius">
+0 mm
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="card">
+
+<h2>조준기 조정 추천</h2>
+
+<div class="click-panel">
+
+<div class="click-box">
+
+<div class="click-title">
+좌 / 우
+</div>
+
+<div
+id="windageClick"
+class="click-value">
+
+0 Click
+
+</div>
+
+</div>
+
+<div class="click-box">
+
+<div class="click-title">
+상 / 하
+</div>
+
+<div
+id="elevationClick"
+class="click-value">
+
+0 Click
+
+</div>
+
+</div>
+
+</div>
+
+<div class="recommend">
+
+<div id="recommendText">
+
+추천 없음
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>탄착 목록</h2>
+
+<table class="shot-table">
+
+<thead>
+
+<tr>
+
+<th>발</th>
+
+<th>X</th>
+
+<th>Y</th>
+
+<th>점수</th>
+
+</tr>
+
+</thead>
+
+<tbody id="shotTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>최근 영점 기록</h2>
+
+<div
+id="historyList"
+class="history-list">
+
+영점 기록이 없습니다.
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+<footer>
+
+Biathlon Coach Tablet PRO
+Version 1.0
+
+</footer>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
